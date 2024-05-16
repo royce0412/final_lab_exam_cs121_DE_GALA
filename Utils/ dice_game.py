@@ -1,3 +1,4 @@
+from user import User
 class DiceGame:
 	def load_scores():
 		pass
