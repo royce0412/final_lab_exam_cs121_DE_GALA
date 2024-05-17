@@ -1,4 +1,4 @@
-from user import User
+from .user import *
 class DiceGame:
 	def load_scores():
 		pass

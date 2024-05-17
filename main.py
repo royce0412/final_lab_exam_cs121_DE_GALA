@@ -1,5 +1,5 @@
 import os
-from utils.user_manager import UserManager
+from Utils import user_manager
 def Cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 
