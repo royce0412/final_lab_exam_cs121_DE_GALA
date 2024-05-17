@@ -26,5 +26,7 @@ def main():
             Cls()
             main()
 
+main()
+
             
 

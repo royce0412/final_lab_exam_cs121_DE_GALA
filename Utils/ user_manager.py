@@ -1,7 +1,12 @@
 from dice_game import *
+import os
+
+def Cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 class UserManager:
 	def __init__(self, user_list):
-		self.user_list = user_list
+		self.user_list = {}
 
 	def load_users():
 		pass
@@ -28,5 +33,16 @@ class UserManager:
 		else:
 			print("Username must be at least 4 characters long.") 
 
-	def login():
-		pass
+	def login(self):
+		print("Login Account")
+		login_username = input("Username: ")
+		login_password = input("Password: ")
+		if login_username in self.user_list and login_password == self.user_list[login_username]:
+			input("Account logged in successfully...")
+			Cls()
+		elif login_username or login_password == "":
+			return
+		else:
+			input("Invalid username or password...Enter to continue")
+			Cls()
+			return
